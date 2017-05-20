@@ -10,7 +10,11 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "bobzz.zone@gmail.com"
 app_license = "MIT"
-
+doc_events = {
+	"*": {
+		"before_insert": "validator.custom.validate_form"
+	}
+}
 # Includes in <head>
 # ------------------
 
