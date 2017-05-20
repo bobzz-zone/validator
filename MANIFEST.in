@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include validator *.css
+recursive-include validator *.csv
+recursive-include validator *.html
+recursive-include validator *.ico
+recursive-include validator *.js
+recursive-include validator *.json
+recursive-include validator *.md
+recursive-include validator *.png
+recursive-include validator *.py
+recursive-include validator *.svg
+recursive-include validator *.txt
+recursive-exclude validator *.pyc
