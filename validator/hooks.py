@@ -12,7 +12,7 @@ app_email = "bobzz.zone@gmail.com"
 app_license = "MIT"
 doc_events = {
 	"*": {
-		"before_insert": "validator.custom.validate_form"
+		"before_insert": "validator.validator.custom.validate_form"
 	}
 }
 # Includes in <head>

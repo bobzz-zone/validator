@@ -1,11 +1,9 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from frappe import msgprint
-from frappe.utils import  date_diff,flt
 
 
-class custom_method(Document):
+class custom(Document):
 	pass
 @frappe.whitelist()
 def validate_form(doc,method):
