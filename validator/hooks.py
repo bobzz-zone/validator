@@ -11,9 +11,37 @@ app_color = "grey"
 app_email = "bobzz.zone@gmail.com"
 app_license = "MIT"
 doc_events = {
-	["Sales Order","Delivery Note","Sales Invoice","Journal Entry","Purchase Invoice","Payment Entry","Purchase Order","Purchase Receipt","Stock Entry","Production Order"]: {
+	"Sales Order":{
+		"before_save": "validatorvalidator.custom.validate_form"
+	},
+	"Delivery Note":{
 		"before_save": "validator.validator.custom.validate_form"
-	}
+	},
+	"Sales Invoice":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Journal Entry":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Purchase Invoice":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Payment Entry":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Purchase Order":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Purchase Receipt":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Stock Entry":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+	"Production Order":{
+		"before_save": "validator.validator.custom.validate_form"
+	},
+
 }
 # Includes in <head>
 # ------------------
