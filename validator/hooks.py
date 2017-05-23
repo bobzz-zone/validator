@@ -12,7 +12,7 @@ app_email = "bobzz.zone@gmail.com"
 app_license = "MIT"
 doc_events = {
 	"Sales Order":{
-		"before_save": "validatorvalidator.custom.validate_form"
+		"before_save": "validator.validator.custom.validate_form"
 	},
 	"Delivery Note":{
 		"before_save": "validator.validator.custom.validate_form"
